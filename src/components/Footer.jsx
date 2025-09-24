@@ -1,0 +1,7 @@
+export default function Footer() {
+  return (
+    <footer className="border-t border-gray-200 py-6 text-center text-gray-500 text-sm">
+      © {new Date().getFullYear()} Your Name — Built with ❤️ using React + Tailwind
+    </footer>
+  );
+}
