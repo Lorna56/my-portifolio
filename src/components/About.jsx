@@ -5,7 +5,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <div>
           <p className="text-gray-600 mb-4">
-            I'm a [Your profession] with X years experience building web apps and digital products.
+            I’m a junior software developer with hands-on experience building web applications and digital products.
             I focus on clean UI, strong UX patterns, and pragmatic engineering.
           </p>
           <ul className="flex flex-wrap gap-3 mb-4">

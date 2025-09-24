@@ -20,7 +20,7 @@ export default function Contact() {
         </form>
         <div>
           <h3 className="font-semibold text-lg mb-2">Get in touch</h3>
-          <p>Email: <a href="mailto:your.email@example.com" className="text-indigo-600">your.email@example.com</a></p>
+          <p>Email: <a href="mailto:lornanaula0042@gmail.com" className="text-indigo-600">lornanaula0042@gmail.com</a></p>
           <p>Location: Kampala, Uganda</p>
           <p className="mt-2">LinkedIn / GitHub / Twitter</p>
         </div>
