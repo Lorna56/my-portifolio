@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo / Name */}
         <div className="text-2xl font-bold text-white cursor-pointer hover:text-indigo-400 transition">
-          Lorna Naula LN
+          Lorna Naula 
         </div>
 
         {/* Quick Links */}
