@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global page styles */
+body {
+  @apply relative min-h-screen text-gray-900;
+  font-family: 'Inter', sans-serif;
+  @apply bg-gradient-to-br from-blue-200 via-purple-100 to-pink-200;
+  overflow-x: hidden;
+
+  /* Keep gradient moving */
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Decorative blurred shapes (optional for depth) */
+body::before,
+body::after {
+  content: '';
+  @apply absolute w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-40;
+  animation: blob 25s infinite ease-in-out alternate;
+}
+
+body::before {
+  @apply bg-blue-300;
+  top: -10rem;
+  left: -10rem;
+}
+
+body::after {
+  @apply bg-pink-300;
+  bottom: -10rem;
+  right: -10rem;
+  animation-delay: 12s;
+}
+
+/* Blob animation (moving around for life) */
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50px, -40px) scale(1.1);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+  75% {
+    transform: translate(20px, -20px) scale(1.05);
+  }
+}
+
+/* Gradient shift animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
