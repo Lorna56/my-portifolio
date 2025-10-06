@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global page styles */
 body {
-  @apply relative min-h-screen text-gray-900;
+  @apply relative text-gray-900;
   font-family: 'Inter', sans-serif;
+
+  /* Remove min-h-screen so gradient doesn't extend beyond content */
   @apply bg-gradient-to-br from-blue-200 via-purple-100 to-pink-200;
   overflow-x: hidden;
 

@@ -99,6 +99,14 @@ export default function Header() {
           >
             Contact
           </a>
+          {/* Hire Me Button for Mobile */}
+    <a
+      href="#contact"
+      onClick={() => setMenuOpen(false)}
+      className="block bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mt-2 transition"
+    >
+      Hire Me
+    </a>
 
           {/* Socials in Mobile */}
           <div className="flex justify-center space-x-6 pt-3 border-t border-gray-700">

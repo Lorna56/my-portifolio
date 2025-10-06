@@ -150,9 +150,9 @@ export default function About() {
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl md:text-5xl font-bold mt-20 mb-8 text-gray-900"
+          className="text-4xl md:text-6xl font-bold mt-20 mb-8 text-gray-900"
         >
-          What I Do
+          What I Do?
         </motion.h3>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
