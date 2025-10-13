@@ -14,6 +14,7 @@ import {
 import ONIMSPhoto from "../assets/ONIMS.jpg"; // ONIMS screenshot
 import CalculatorPhoto from "../assets/Calculator.png"; // Calculator screenshot
 import ToDoPhoto from "../assets/To-do.png"; // To-Do App screenshot
+import QuizPhoto from "../assets/quiz.png"; // Quiz App screenshot
 
 const AnimatedText = ({ text, delayOffset = 0 }) => {
   const words = text.split(" ");
@@ -64,6 +65,14 @@ export default function Projects() {
       demoLink: "https://Lorna56.github.io/to-do-list-app",
       img: ToDoPhoto,
     },
+    {
+  title: "Mini Quiz Game",
+  desc: "An interactive quiz game with 20 fun questions, a timer, and confetti celebration for high scores. Built for a responsive and engaging user experience.",
+  tech: "HTML · CSS · JavaScript",
+  demoLink: " https://lorna56.github.io/mini-quiz-game/",
+  img: QuizPhoto, // make sure you import the quiz screenshot as QuizPhoto
+},
+
   ];
 
   const skills = [
