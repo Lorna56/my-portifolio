@@ -44,7 +44,7 @@ export default function Contact() {
     const toastId = toast.loading("Sending your message...");
 
     try {
-      const res = await fetch("http://localhost:5000/api/mail/send", {
+      const res = await fetch("https://portifolio-api-ulbj.onrender.com/api/mail/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
