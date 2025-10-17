@@ -15,6 +15,7 @@ import ONIMSPhoto from "../assets/ONIMS.jpg"; // ONIMS screenshot
 import CalculatorPhoto from "../assets/Calculator.png"; // Calculator screenshot
 import ToDoPhoto from "../assets/To-do.png"; // To-Do App screenshot
 import QuizPhoto from "../assets/quiz.png"; // Quiz App screenshot
+import WeatherPhoto from "../assets/weather.png"; // Weather App screenshot
 
 const AnimatedText = ({ text, delayOffset = 0 }) => {
   const words = text.split(" ");
@@ -68,9 +69,16 @@ export default function Projects() {
     {
   title: "Mini Quiz Game",
   desc: "An interactive quiz game with 20 fun questions, a timer, and confetti celebration for high scores. Built for a responsive and engaging user experience.",
-  tech: "HTML · CSS · JavaScript",
+  tech: "React · Tailwind CSS · JavaScript",
   demoLink: " https://lorna56.github.io/mini-quiz-game/",
   img: QuizPhoto, // make sure you import the quiz screenshot as QuizPhoto
+},
+{
+  title: "Weather App",
+  desc: "A real-time weather forecasting app that displays temperature, humidity, wind speed, and weather conditions for any city. Includes dynamic background changes and a clean, responsive UI.",
+  tech: "HTML · CSS · JavaScript · OpenWeather API",
+  demoLink: "https://lorna56.github.io/weather-app/",
+  img: WeatherPhoto, // make sure you import the weather app screenshot as WeatherPhoto
 },
 
   ];
