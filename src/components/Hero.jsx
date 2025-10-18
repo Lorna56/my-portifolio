@@ -42,7 +42,7 @@ export default function Hero() {
           variants={textVariant}
           className="text-indigo-400 font-bold text-3xl md:text-4xl lg:text-5xl mb-6 max-w-3xl mx-auto leading-snug"
         >
-          JUNIOR SOFTWARE DEVELOPER
+          JUNIOR SOFTWARE ENGINEER
         </motion.p>
 
         {/* Main Photo */}

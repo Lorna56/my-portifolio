@@ -100,7 +100,7 @@ export default function About() {
         <div className="flex flex-col items-center justify-center gap-12">
           <div className="max-w-3xl">
             <AnimatedText
-              text="I’m a junior software developer with hands-on experience building web applications and digital products. I focus on clean UI, strong UX patterns, and pragmatic engineering."
+              text="I’m a junior software engineer with hands-on experience building web applications and digital products. I focus on clean UI, strong UX patterns, and pragmatic engineering."
             />
 
             {/* Stats */}
