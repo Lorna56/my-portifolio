@@ -16,6 +16,7 @@ import CalculatorPhoto from "../assets/Calculator.png"; // Calculator screenshot
 import ToDoPhoto from "../assets/To-do.png"; // To-Do App screenshot
 import QuizPhoto from "../assets/quiz.png"; // Quiz App screenshot
 import WeatherPhoto from "../assets/weather.png"; // Weather App screenshot
+import BeyondPhoto from "../assets/Beyond.png"; // Beyond App screenshot
 
 const AnimatedText = ({ text, delayOffset = 0 }) => {
   const words = text.split(" ");
@@ -58,6 +59,13 @@ export default function Projects() {
       tech: "React · Vite · Tailwind CSS · Node.js",
       demoLink: "https://Lorna56.github.io/my-calculator",
       img: CalculatorPhoto,
+    },
+    {
+    title: "Beyond Tech Website",
+      desc: "A professional business landing page designed to showcase digital solutions and attract clients. Features modern animations, Formspree-powered contact forms, and a responsive layout built for all devices.",
+      tech: "HTML · CSS · Bootstrap · JavaScript · Formspree",
+      demoLink: "https://lorna56.github.io/beyond-tech/", // ✅ replace with your actual deployed link
+      img: BeyondPhoto,
     },
     {
       title: "To-Do Web App",
