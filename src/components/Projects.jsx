@@ -17,6 +17,7 @@ import ToDoPhoto from "../assets/To-do.png"; // To-Do App screenshot
 import QuizPhoto from "../assets/quiz.png"; // Quiz App screenshot
 import WeatherPhoto from "../assets/weather.png"; // Weather App screenshot
 import BeyondPhoto from "../assets/Beyond.png"; // Beyond App screenshot
+import InvoiceBoxPhoto from "../assets/invoice.png"; // InvoiceBox screenshot
 
 const AnimatedText = ({ text, delayOffset = 0 }) => {
   const words = text.split(" ");
@@ -60,6 +61,19 @@ export default function Projects() {
       demoLink: "https://Lorna56.github.io/my-calculator",
       img: CalculatorPhoto,
     },
+    {
+  title: "InvoiceBox",
+  desc: "A professional invoice management solution designed to reduce paperwork and improve payment tracking for small to medium-sized businesses. Enables providers to efficiently create and manage invoices while giving purchasers a simple platform to view and pay bills, all with comprehensive reporting for administrators.",
+  tech: "React · Node.js · Express · MongoDB · Tailwind CSS · JWT Authentication",
+  demoLink: "https://your-demo-link.com",
+  img: InvoiceBoxPhoto,
+  highlights: [
+    "Reduces invoice processing time by 60%",
+    "Improves payment tracking accuracy",
+    "Eliminates paper-based invoicing",
+    "Provides comprehensive financial reporting"
+  ],
+},
     {
     title: "Beyond Tech Website",
       desc: "A professional business landing page designed to showcase digital solutions and attract clients. Features modern animations, Formspree-powered contact forms, and a responsive layout built for all devices.",
