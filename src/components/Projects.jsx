@@ -65,7 +65,7 @@ export default function Projects() {
   title: "InvoiceBox",
   desc: "A professional invoice management solution designed to reduce paperwork and improve payment tracking for small to medium-sized businesses. Enables providers to efficiently create and manage invoices while giving purchasers a simple platform to view and pay bills, all with comprehensive reporting for administrators.",
   tech: "React · Node.js · Express · MongoDB · Tailwind CSS · JWT Authentication",
-  demoLink: "https://your-demo-link.com",
+  demoLink: "https://Lorna56.github.io/invoice-box",
   img: InvoiceBoxPhoto,
   highlights: [
     "Reduces invoice processing time by 60%",
