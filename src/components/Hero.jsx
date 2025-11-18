@@ -89,32 +89,35 @@ export default function Hero() {
           Passionate about crafting clean, maintainable code and intuitive
           interfaces that make technology accessible and enjoyable.
         </motion.p>
+<motion.div
+  custom={3}
+  variants={textVariant}
+  className="flex flex-col md:flex-row items-center gap-4 md:gap-6"
+>
+  <a
+    href="#projects"
+    className="bg-indigo-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition w-full md:w-auto"
+  >
+    Explore my work
+  </a>
 
-        <motion.div custom={3} variants={textVariant} className="space-x-4">
-          <a
-            href="#projects"
-            className="bg-indigo-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition"
-          >
-            Explore my work
-          </a>
+  <a
+    href="#contact"
+    className="border border-gray-400 text-lg md:text-xl px-6 py-3 rounded-lg hover:border-indigo-400 transition w-full md:w-auto"
+  >
+    Get in touch
+  </a>
 
-          <a
-            href="#contact"
-            className="border border-gray-400 text-lg md:text-xl px-6 py-3 rounded-lg hover:border-indigo-400 transition"
-          >
-            Get in touch
-          </a>
+  <a
+    href="https://drive.google.com/file/d/10TmRXKPpHC3N5raGcMFD3bUS0PFF5-co/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-pink-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition w-full md:w-auto"
+  >
+    Download CV
+  </a>
+</motion.div>
 
-          {/* ✅ DOWNLOAD CV BUTTON USING GOOGLE DRIVE */}
-          <a
-            href="https://drive.google.com/file/d/10TmRXKPpHC3N5raGcMFD3bUS0PFF5-co/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-pink-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition"
-          >
-            Download CV
-          </a>
-        </motion.div>
       </motion.div>
     </section>
   );
