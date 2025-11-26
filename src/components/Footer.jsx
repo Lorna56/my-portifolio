@@ -24,7 +24,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Lorna Naula
+          © {new Date().getFullYear()} Lorna Naula. All Rights Reserved.
         </div>
       </div>
     </footer>

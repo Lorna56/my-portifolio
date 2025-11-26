@@ -60,7 +60,7 @@ export default function About() {
   const stats = [
     { label: "Years of Experience", value: 1 },
     { label: "Projects Completed", value: 7},
-    { label: "Happy Clients", value: 30 },
+    { label: "Happy Users", value: 30 },
   ];
 
   const controls = useAnimation();
