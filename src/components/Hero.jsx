@@ -23,11 +23,12 @@ export default function Hero() {
       className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20 
                  bg-gradient-to-b from-blue-800 via-indigo-900 to-slate-900 text-white"
     >
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-      >
+     <motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: false, amount: 0.3 }}
+  className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto"
+>
         <motion.h1
           className="text-5xl md:text-7xl font-extrabold mb-6 text-indigo-300"
           animate={{ x: [0, 10, -10, 0] }}
@@ -90,32 +91,32 @@ export default function Hero() {
           interfaces that make technology accessible and enjoyable.
         </motion.p>
 <motion.div
-  custom={3}
+  custom={2}
   variants={textVariant}
-  className="flex flex-col md:flex-row items-center gap-4 md:gap-6"
+  className="flex flex-col md:flex-row items-center gap-3 md:gap-4"
 >
   <a
     href="#projects"
-    className="bg-indigo-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition w-full md:w-auto"
+    className="bg-indigo-600 text-white text-base md:text-lg px-5 py-2.5 rounded-lg shadow hover:bg-indigo-700 transition w-full md:w-auto"
   >
     Explore my work
   </a>
 
   <a
     href="#contact"
-    className="border border-gray-400 text-lg md:text-xl px-6 py-3 rounded-lg hover:border-indigo-400 transition w-full md:w-auto"
+    className="border border-gray-400 text-base md:text-lg px-5 py-2.5 rounded-lg hover:border-indigo-400 transition w-full md:w-auto"
   >
     Get in touch
   </a>
 
-  <a
+  {/* <a
     href="https://drive.google.com/file/d/10TmRXKPpHC3N5raGcMFD3bUS0PFF5-co/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-pink-600 text-white text-lg md:text-xl px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition w-full md:w-auto"
   >
     Download CV
-  </a>
+  </a> */}
 </motion.div>
 
       </motion.div>
