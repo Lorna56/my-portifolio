@@ -8,7 +8,10 @@ import {
   SiJavascript,
   SiTypescript,
   SiFigma,
+
+  
 } from "react-icons/si";
+
 
 import ONIMSPhoto from "../assets/ONIMS.jpg";
 import CalculatorPhoto from "../assets/Calculator.png";
@@ -106,7 +109,7 @@ export default function Projects() {
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400 text-3xl" /> },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400 text-3xl" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500 text-3xl" /> },
-    { name: "Python", icon: <SiPython className="text-gray-700 text-3xl" /> },
+    { name: "Python/Django", icon: <SiPython className="text-gray-700 text-3xl" /> },
     { name: "Git/GitHub", icon: <FaGitAlt className="text-orange-500 text-3xl" /> },
     { name: "Figma", icon: <SiFigma className="text-pink-500 text-3xl" /> },
     { name: "REST APIs", icon: <FaNodeJs className="text-indigo-600 text-3xl" /> },
