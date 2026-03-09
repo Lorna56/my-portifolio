@@ -4,7 +4,7 @@ import ONIMSPhoto from "../assets/ONIMS.jpg";
 import CalculatorPhoto from "../assets/Calculator.png";
 import ToDoPhoto from "../assets/To-do.png";
 import QuizPhoto from "../assets/quiz.png";
-import WeatherPhoto from "../assets/weather.png";
+import WeatherPhoto from "../assets/Weather.png";
 import BeyondPhoto from "../assets/Beyond.png";
 import InvoiceBoxPhoto from "../assets/invoice.png";
 
