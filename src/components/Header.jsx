@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,50 +11,32 @@ export default function Header() {
         {/* Logo / Name */}
         <a
           href="#home"
-          className="text-2xl md:text-3xl font-bold text-white hover:text-indigo-400 transition-all duration-300"
+          className="text-xl md:text-2xl font-bold text-white hover:text-pink-400 transition-all duration-300"
         >
           LORNA NAULA
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8 text-gray-300 font-medium text-lg md:text-xl">
-          <a href="#home" className="hover:text-indigo-400 transition-all duration-300">
+        <nav className="hidden md:flex items-center space-x-6 text-gray-300 font-medium text-base md:text-lg">
+          <a href="#home" className="hover:text-emerald-400 transition-all duration-300">
             Home
           </a>
-          <a href="#about" className="hover:text-indigo-400 transition-all duration-300">
+          <a href="#about" className="hover:text-emerald-400 transition-all duration-300">
             About
           </a>
-          <a href="#projects" className="hover:text-indigo-400 transition-all duration-300">
+          <a href="#projects" className="hover:text-emerald-400 transition-all duration-300">
             Projects
           </a>
-          <a href="#contact" className="hover:text-indigo-400 transition-all duration-300">
+          <a href="#contact" className="hover:text-emerald-400 transition-all duration-300">
             Contact
           </a>
 
-          {/* Social Icons */}
-          <div className="flex space-x-5 ml-4">
-            <a
-              href="https://github.com/Lorna56"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-all duration-300"
-            >
-              <FaGithub size={22} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/naula-lorna-3513732b5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-all duration-300"
-            >
-              <FaLinkedin size={22} />
-            </a>
-          </div>
+
 
           {/* Optional CTA */}
           <a
             href="#contact"
-            className="ml-4 bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg text-lg md:text-xl shadow-md hover:shadow-lg transition-all duration-300"
+            className="ml-4 bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-base md:text-lg shadow-md hover:shadow-lg transition-all duration-300"
           >
             Hire Me
           </a>
@@ -75,28 +57,28 @@ export default function Header() {
           <a
             href="#home"
             onClick={() => setMenuOpen(false)}
-            className="block text-lg font-medium hover:text-indigo-400 transition-all duration-300"
+            className="block text-lg font-medium hover:text-emerald-400 transition-all duration-300"
           >
             Home
           </a>
           <a
             href="#about"
             onClick={() => setMenuOpen(false)}
-            className="block text-lg font-medium hover:text-indigo-400 transition-all duration-300"
+            className="block text-lg font-medium hover:text-emerald-400 transition-all duration-300"
           >
             About
           </a>
           <a
             href="#projects"
             onClick={() => setMenuOpen(false)}
-            className="block text-lg font-medium hover:text-indigo-400 transition-all duration-300"
+            className="block text-lg font-medium hover:text-emerald-400 transition-all duration-300"
           >
             Projects
           </a>
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="block text-lg font-medium hover:text-indigo-400 transition-all duration-300"
+            className="block text-lg font-medium hover:text-emerald-400 transition-all duration-300"
           >
             Contact
           </a>
@@ -105,30 +87,12 @@ export default function Header() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="block bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-lg mt-2 text-lg font-medium shadow-md hover:shadow-lg transition-all duration-300"
+            className="block bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg mt-2 text-lg font-medium shadow-md hover:shadow-lg transition-all duration-300"
           >
             Hire Me
           </a>
 
-          {/* Socials in Mobile */}
-          <div className="flex justify-center space-x-6 pt-4 border-t border-gray-700">
-            <a
-              href="https://github.com/Lorna56"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-all duration-300"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/naula-lorna-3513732b5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-all duration-300"
-            >
-              <FaLinkedin size={24} />
-            </a>
-          </div>
+
         </div>
       )}
     </header>

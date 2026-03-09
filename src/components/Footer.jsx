@@ -1,29 +1,11 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-6 mt-auto">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col items-center space-y-4">
-        {/* Logo / Name */}
-        <div className="text-2xl font-bold text-white">
-          Lorna Naula
-        </div>
-
-        {/* Social Icons */}
-        <div className="flex space-x-6">
-          <a href="https://github.com/Lorna56" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-            <FaGithub size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/naula-lorna-3513732b5" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-            <FaLinkedin size={20} />
-          </a>
-          <a href="mailto:lornanaula0042@gmail.com" className="hover:text-white transition">
-            <FaEnvelope size={20} />
-          </a>
-        </div>
-
+    <footer className="bg-gradient-to-r from-emerald-900 to-pink-900 text-gray-300 py-4 mt-auto border-t border-emerald-800">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
         {/* Copyright */}
-        <div className="text-gray-500 text-sm">
+        <div className="text-gray-400 text-sm py-1">
           © {new Date().getFullYear()} Lorna Naula. All Rights Reserved.
         </div>
       </div>

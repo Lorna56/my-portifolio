@@ -44,15 +44,13 @@ export default function Contact() {
     const toastId = toast.loading("Sending your message...");
 
     try {
-      const res = await fetch("https://portifolio-api-ulbj.onrender.com/api/mail/send", {
+      const res = await fetch("https://formspree.io/f/mnneejvl", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({ name, email, message }),
       });
 
-      const data = await res.json();
-
-      if (data.success) {
+      if (res.ok) {
         toast.success("✅ Message sent successfully!", { id: toastId });
         e.target.reset();
       } else {
@@ -69,7 +67,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full bg-gradient-to-b from-blue-200 via-blue-200 to-blue-200"
+      className="w-full bg-gradient-to-b from-emerald-100 via-pink-100 to-green-100"
     >
       <Toaster position="top-right" reverseOrder={false} />
 
@@ -94,13 +92,23 @@ export default function Contact() {
             transition={{ duration: 0.6, type: "spring", stiffness: 90 }}
           >
             <AnimatedText
-              text="Let’s connect! You can reach me via email, phone, or my socials below."
+              text="Let’s connect! You can reach me via email, phone, or my socials below. Want a quick chat? Talk to my AI assistant!"
               delayOffset={0.1}
             />
 
+            {/* AI Assistant Button */}
+            <motion.a
+              href="https://www.jotform.com/agent/019b30f38d90769ba70871b64638de23cae5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-full font-bold text-xl shadow-lg hover:bg-pink-600 transition hover:scale-105"
+            >
+              💬 Chat with my AI Assistant
+            </motion.a>
+
             {/* Email */}
-            <div className="flex items-center gap-5">
-              <Mail className="text-indigo-600" size={36} />
+            <div className="flex items-center gap-5 mt-8">
+              <Mail className="text-emerald-600" size={36} />
               <div>
                 <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
                   Email
@@ -116,7 +124,7 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="flex items-center gap-5">
-              <Phone className="text-indigo-600" size={36} />
+              <Phone className="text-emerald-600" size={36} />
               <div>
                 <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
                   Phone
@@ -129,13 +137,13 @@ export default function Contact() {
 
             {/* Location */}
             <div className="flex items-center gap-5">
-              <MapPin className="text-indigo-600" size={36} />
+              <MapPin className="text-emerald-600" size={36} />
               <div>
                 <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
                   Location
                 </h3>
                 <p className="text-gray-800 text-xl md:text-2xl">
-                  Kampala, Uganda
+                  Seeta, Mukono, Uganda
                 </p>
               </div>
             </div>
@@ -143,8 +151,8 @@ export default function Contact() {
             {/* Socials */}
             <div className="flex items-start gap-5">
               <div className="flex flex-col gap-3 flex-shrink-0 mt-7">
-                <Linkedin className="text-indigo-600" size={36} />
-                <Github className="text-indigo-600" size={36} />
+                <Linkedin className="text-emerald-600" size={36} />
+                <Github className="text-emerald-600" size={36} />
               </div>
               <div className="flex flex-col">
                 <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
@@ -194,7 +202,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Jane Doe"
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
                 required
               />
             </div>
@@ -208,7 +216,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="you@example.com"
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
                 required
               />
             </div>
@@ -222,7 +230,7 @@ export default function Contact() {
                 name="message"
                 rows="6"
                 placeholder="Tell me about your project..."
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm resize-none"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm resize-none"
                 required
               ></textarea>
             </div>
@@ -231,7 +239,7 @@ export default function Contact() {
             <motion.button
               type="submit"
               disabled={sending}
-              className="mt-4 w-full bg-indigo-600 text-white py-4 text-2xl md:text-3xl rounded-xl font-bold hover:bg-indigo-700 shadow-lg hover:shadow-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mt-4 w-full bg-emerald-600 text-white py-4 text-2xl md:text-3xl rounded-xl font-bold hover:bg-emerald-700 shadow-lg hover:shadow-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
