@@ -1,9 +1,20 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Rocket } from "lucide-react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import myPhoto from "../assets/NAULA.jpg";
 
 export default function Hero() {
+  const titles = ["Software Engineer", "Social Scientist", "Project Manager"];
+  const [titleIndex, setTitleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTitleIndex((prev) => (prev + 1) % titles.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   const textVariant = {
     hidden: { opacity: 0, y: 20 },
     visible: (i) => ({
@@ -45,13 +56,21 @@ export default function Hero() {
           LORNA NAULA
         </motion.h1>
 
-        <motion.p
-          custom={1}
-          variants={textVariant}
-          className="text-emerald-400 font-bold text-2xl md:text-3xl lg:text-4xl mb-8 max-w-3xl mx-auto leading-snug"
-        >
-          SOFTWARE ENGINEER &amp; SOCIAL SCIENTIST
-        </motion.p>
+        {/* Animated sliding title */}
+        <div className="h-14 md:h-16 lg:h-20 flex items-center justify-center overflow-hidden mb-8">
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={titleIndex}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="text-emerald-400 font-bold text-2xl md:text-3xl lg:text-4xl max-w-3xl mx-auto leading-snug uppercase tracking-wide"
+            >
+              {titles[titleIndex]}
+            </motion.p>
+          </AnimatePresence>
+        </div>
 
         {/* Main Photo */}
         <div className="relative flex justify-center items-center mb-8">

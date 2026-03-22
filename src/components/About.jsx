@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
 import { FaCogs, FaUsers, FaGlobe, FaChartLine, FaHeart, FaCheckCircle, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiPostgresql, SiTailwindcss, SiPython, SiJavascript, SiTypescript, SiFigma, SiAmazonwebservices } from "react-icons/si";
+import { SiMongodb, SiPostgresql, SiTailwindcss, SiPython, SiJavascript, SiTypescript, SiFigma, SiAmazonwebservices, SiNextdotjs, SiCpanel } from "react-icons/si";
 
 // Animated text helper
 const AnimatedText = ({ text, delayOffset = 0 }) => {
@@ -67,7 +67,8 @@ export default function About() {
 
   const stats = [
     { label: "Years Experience", value: 2 },
-    { label: "Projects Completed", value: 7 },
+    { label: "Projects Completed", value: 8 },
+    { label: "Certificates Completed", value: 4 },
   ];
 
   const controls = useAnimation();
@@ -197,6 +198,9 @@ export default function About() {
               <li className="flex items-center gap-2"><SiPostgresql className="text-blue-600 text-xl" /> PostgreSQL</li>
               <li className="flex items-center gap-2"><SiMongodb className="text-green-500 text-xl" /> MongoDB</li>
               <li className="flex items-center gap-2"><SiAmazonwebservices className="text-orange-500 text-xl" /> AWS</li>
+              <li className="flex items-center gap-2"><SiNextdotjs className="text-gray-900 text-xl" /> Next.js</li>
+              <li className="flex items-center gap-2"><SiCpanel className="text-orange-600 text-xl" /> cPanel</li>
+              <li className="flex items-center gap-2"><FaGlobe className="text-teal-500 text-xl" /> Sevalla</li>
             </ul>
           </motion.div>
 

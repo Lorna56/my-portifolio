@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import ONIMSPhoto from "../assets/ONIMS.jpg";
+import MedFundPhoto from "../assets/MedFund.png";
 import CalculatorPhoto from "../assets/Calculator.png";
 import ToDoPhoto from "../assets/To-do.png";
 import QuizPhoto from "../assets/quiz.png";
@@ -10,6 +11,14 @@ import InvoiceBoxPhoto from "../assets/invoice.png";
 
 export default function Projects() {
   const projects = [
+    {
+      title: "MedFund",
+      desc: "A scalable healthcare funding platform with secure data management and efficient backend systems, supporting seamless user interactions and transactions.",
+      tech: "Next.js · Tailwind CSS · PostgreSQL · Sevalla",
+      demoLink:
+        "https://drive.google.com/file/d/1bSOX6OLpBUHeBIfpuC91yyXub2FcCYT4/view?usp=drivesdk",
+      img: MedFundPhoto,
+    },
     {
       title: "ONIMS",
       desc: "A secure and modular MIS for HR, project tracking, and document management.",
