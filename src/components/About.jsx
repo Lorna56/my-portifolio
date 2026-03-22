@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
 import { FaCogs, FaUsers, FaGlobe, FaChartLine, FaHeart, FaCheckCircle, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiPostgresql, SiTailwindcss, SiPython, SiJavascript, SiTypescript, SiFigma, SiAmazonwebservices, SiNextdotjs, SiCpanel } from "react-icons/si";
+import { SiMongodb, SiPostgresql, SiTailwindcss, SiPython, SiJavascript, SiTypescript, SiFigma, SiAmazonwebservices, SiNextdotjs, SiCpanel, SiVercel, SiRender, SiNamecheap } from "react-icons/si";
 
 // Animated text helper
 const AnimatedText = ({ text, delayOffset = 0 }) => {
@@ -201,6 +201,9 @@ export default function About() {
               <li className="flex items-center gap-2"><SiNextdotjs className="text-gray-900 text-xl" /> Next.js</li>
               <li className="flex items-center gap-2"><SiCpanel className="text-orange-600 text-xl" /> cPanel</li>
               <li className="flex items-center gap-2"><FaGlobe className="text-teal-500 text-xl" /> Sevalla</li>
+              <li className="flex items-center gap-2"><SiVercel className="text-gray-900 text-xl" /> Vercel</li>
+              <li className="flex items-center gap-2"><SiRender className="text-indigo-500 text-xl" /> Render</li>
+              <li className="flex items-center gap-2"><SiNamecheap className="text-red-500 text-xl" /> Namecheap</li>
             </ul>
           </motion.div>
 
