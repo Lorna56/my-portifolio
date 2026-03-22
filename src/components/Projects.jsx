@@ -13,7 +13,7 @@ export default function Projects() {
   const projects = [
     {
       title: "MedFund",
-      desc: "A scalable healthcare funding platform with secure data management and efficient backend systems, supporting seamless user interactions and transactions.",
+      desc: "A scalable healthcare funding platform with secure data management and efficient backend and frontend systems, supporting seamless user interactions and transactions.",
       tech: "Next.js · Tailwind CSS · PostgreSQL · Sevalla",
       demoLink:
         "https://drive.google.com/file/d/1bSOX6OLpBUHeBIfpuC91yyXub2FcCYT4/view?usp=drivesdk",
