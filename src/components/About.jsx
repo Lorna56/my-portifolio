@@ -185,10 +185,10 @@ export default function About() {
           Skills & Tools
         </motion.h3>
 
-        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-left">
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto text-left items-start">
           <motion.div className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition duration-300 border-t-4 border-pink-500">
             <h4 className="text-xl font-bold mb-4 text-gray-900 border-b pb-2">Programming</h4>
-            <ul className="text-base text-gray-700 space-y-3">
+            <ul className="text-sm text-gray-700 grid grid-cols-2 gap-x-3 gap-y-2.5">
               <li className="flex items-center gap-2"><SiJavascript className="text-yellow-400 text-xl" /> JavaScript</li>
               <li className="flex items-center gap-2"><SiTypescript className="text-blue-500 text-xl" /> TypeScript</li>
               <li className="flex items-center gap-2"><SiPython className="text-gray-700 text-xl" /> Python/Django</li>
