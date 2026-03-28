@@ -8,7 +8,7 @@ import toast, { Toaster } from "react-hot-toast";
 const AnimatedText = ({ text, delayOffset = 0 }) => {
   const words = text.split(" ");
   return (
-    <p className="text-gray-900 mb-8 flex flex-wrap justify-center text-2xl md:text-3xl leading-relaxed font-semibold max-w-3xl mx-auto">
+    <p className="text-gray-900 mb-8 flex flex-wrap justify-center text-lg md:text-xl lg:text-2xl leading-relaxed font-semibold max-w-3xl mx-auto">
       {words.map((word, index) => (
         <motion.span
           key={index}
@@ -77,7 +77,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-6xl md:text-7xl font-extrabold mb-14 text-center text-gray-900"
+          className="text-4xl md:text-5xl font-extrabold mb-14 text-center text-gray-900"
         >
           Contact
         </motion.h2>
@@ -101,21 +101,21 @@ export default function Contact() {
               href="https://www.jotform.com/agent/019b30f38d90769ba70871b64638de23cae5"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-full font-bold text-xl shadow-lg hover:bg-pink-600 transition hover:scale-105"
+              className="inline-flex items-center gap-3 bg-pink-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-pink-600 transition hover:scale-105"
             >
               💬 Chat with my AI Assistant
             </motion.a>
 
             {/* Email */}
             <div className="flex items-center gap-5 mt-8">
-              <Mail className="text-emerald-600" size={36} />
+              <Mail className="text-emerald-600" size={32} />
               <div>
-                <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
+                <h3 className="font-bold text-xl md:text-2xl text-gray-900">
                   Email
                 </h3>
                 <a
                   href="mailto:lornanaula0042@gmail.com"
-                  className="text-gray-800 hover:text-indigo-600 transition text-xl md:text-2xl"
+                  className="text-gray-800 hover:text-indigo-600 transition text-lg md:text-xl"
                 >
                   lornanaula0042@gmail.com
                 </a>
@@ -124,12 +124,12 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="flex items-center gap-5">
-              <Phone className="text-emerald-600" size={36} />
+              <Phone className="text-emerald-600" size={32} />
               <div>
-                <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
+                <h3 className="font-bold text-xl md:text-2xl text-gray-900">
                   Phone
                 </h3>
-                <p className="text-gray-800 text-xl md:text-2xl">
+                <p className="text-gray-800 text-lg md:text-xl">
                   +256 762 634 298
                 </p>
               </div>
@@ -137,12 +137,12 @@ export default function Contact() {
 
             {/* Location */}
             <div className="flex items-center gap-5">
-              <MapPin className="text-emerald-600" size={36} />
+              <MapPin className="text-emerald-600" size={32} />
               <div>
-                <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
+                <h3 className="font-bold text-xl md:text-2xl text-gray-900">
                   Location
                 </h3>
-                <p className="text-gray-800 text-xl md:text-2xl">
+                <p className="text-gray-800 text-lg md:text-xl">
                   Seeta, Mukono, Uganda
                 </p>
               </div>
@@ -151,14 +151,14 @@ export default function Contact() {
             {/* Socials */}
             <div className="flex items-start gap-5">
               <div className="flex flex-col gap-3 flex-shrink-0 mt-7">
-                <Linkedin className="text-emerald-600" size={36} />
-                <Github className="text-emerald-600" size={36} />
+                <Linkedin className="text-emerald-600" size={32} />
+                <Github className="text-emerald-600" size={32} />
               </div>
               <div className="flex flex-col">
-                <h3 className="font-bold text-2xl md:text-3xl text-gray-900">
+                <h3 className="font-bold text-lg md:text-xl text-gray-900">
                   Socials
                 </h3>
-                <div className="flex flex-col gap-3 mt-2 text-gray-800 text-xl md:text-2xl">
+                <div className="flex flex-col gap-3 mt-2 text-gray-800 text-base md:text-lg">
                   <a
                     href="https://www.linkedin.com/in/naula-lorna-3513732b5"
                     target="_blank"
@@ -189,48 +189,48 @@ export default function Contact() {
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.6, type: "spring", stiffness: 90 }}
           >
-            <h3 className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-900">
+            <h3 className="text-2xl md:text-3xl font-extrabold mb-6 text-gray-900">
               Send me a Message
             </h3>
 
             {/* Name */}
             <div className="flex flex-col">
-              <label className="font-semibold mb-2 text-gray-800 text-xl md:text-2xl">
+              <label className="font-semibold mb-2 text-gray-800 text-base md:text-lg">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
                 placeholder="Jane Doe"
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
                 required
               />
             </div>
 
             {/* Email */}
             <div className="flex flex-col">
-              <label className="font-semibold mb-2 text-gray-800 text-xl md:text-2xl">
+              <label className="font-semibold mb-2 text-gray-800 text-base md:text-lg">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
                 placeholder="you@example.com"
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm"
                 required
               />
             </div>
 
             {/* Message */}
             <div className="flex flex-col">
-              <label className="font-semibold mb-2 text-gray-800 text-xl md:text-2xl">
+              <label className="font-semibold mb-2 text-gray-800 text-base md:text-lg">
                 Message
               </label>
               <textarea
                 name="message"
                 rows="6"
                 placeholder="Tell me about your project..."
-                className="border border-gray-300 rounded-xl px-5 py-4 text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm resize-none"
+                className="border border-gray-300 rounded-xl px-5 py-4 text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-sm resize-none"
                 required
               ></textarea>
             </div>
@@ -239,7 +239,7 @@ export default function Contact() {
             <motion.button
               type="submit"
               disabled={sending}
-              className="mt-4 w-full bg-emerald-600 text-white py-4 text-2xl md:text-3xl rounded-xl font-bold hover:bg-emerald-700 shadow-lg hover:shadow-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mt-4 w-full bg-emerald-600 text-white py-4 text-xl md:text-2xl rounded-xl font-bold hover:bg-emerald-700 shadow-lg hover:shadow-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
